@@ -1,172 +1,179 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Manage landing page</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <title>Frontend Mentor | Manage landing page</title>
 
-  <style>
-    .bg-pattern {
-      background-image: url(images/bg-tablet-pattern.svg);
-      background-repeat: no-repeat;
-      background-position: top right;
-    }
-    .cta-bg {
-      background-image: url(images/bg-simplify-section-mobile.svg);
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-  </style>
-</head>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-<body class="bg-gray-50 text-gray-700">
+    <style>
+      .team-work {
+        background-image: url(images/bg-simplify-section-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      .top {
+        background-image: url(images/bg-tablet-pattern.svg);
+        background-repeat: no-repeat;
+        background-position: top right;
+      }
+    </style>
+  </head>
 
-<header class="max-w-screen-xl mx-auto px-6 py-6 flex items-center justify-between">
-  <img src="images/logo.svg" alt="Manage logo" />
-  <nav class="hidden md:flex gap-8 text-sm font-semibold text-blue-950">
-    <a href="#">Pricing</a>
-    <a href="#">Product</a>
-    <a href="#">About Us</a>
-    <a href="#">Careers</a>
-    <a href="#">Community</a>
-  </nav>
-  <button class="hidden md:block px-6 py-2 bg-orange-500 text-white rounded-full shadow">
-    Get Started
-  </button>
-  <img src="images/icon-hamburger.svg" alt="Menu" class="md:hidden" />
-</header>
+  <body class="bg-slate-100 flex justify-center">
+    <div class="container bg-gray-50 w-[450px] md:w-full">
 
-<section class="bg-pattern max-w-screen-xl mx-auto px-6 py-12 md:flex md:items-center md:gap-12">
-  <div class="md:w-1/2 text-center md:text-left">
-    <h1 class="text-3xl md:text-4xl font-bold text-blue-950">
-      Bring everyone together to build better products.
-    </h1>
-    <p class="mt-4 text-gray-500">
-      Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.
-    </p>
-    <button class="mt-6 px-6 py-2 bg-orange-500 text-white rounded-full shadow">
-      Get Started
-    </button>
-  </div>
-
-  <div class="md:w-1/2 mt-10 md:mt-0">
-    <img src="images/illustration-intro.svg" alt="Product dashboard illustration" class="w-full max-w-md mx-auto" />
-  </div>
-</section>
-
-<section class="max-w-screen-xl mx-auto px-6 py-16 md:flex md:gap-12">
-  <div class="md:w-1/2 text-center md:text-left">
-    <h2 class="text-3xl font-bold text-blue-950">
-      What’s different about Manage?
-    </h2>
-    <p class="mt-4 text-gray-500">
-      Manage provides all the functionality your team needs, without the complexity.
-    </p>
-  </div>
-
-  <div class="md:w-1/2 mt-10 md:mt-0 space-y-8">
-    <div>
-      <div class="flex items-center gap-4">
-        <span class="bg-orange-500 text-white px-5 py-1 rounded-full font-bold">01</span>
-        <h3 class="font-bold text-blue-950">Track company-wide progress</h3>
+      <div class="top flex items-center justify-between px-6 py-6 max-w-6xl mx-auto md:justify-normal md:gap-20">
+        <img src="images/logo.svg" alt="" />
+        <img src="images/icon-hamburger.svg" alt="" class="md:hidden" />
+        <p class="hidden md:flex">Pricing</p>
+        <p class="hidden md:flex">Product</p>
+        <p class="hidden md:flex">About Us</p>
+        <p class="hidden md:flex">Careers</p>
+        <p class="hidden md:flex">Community</p>
+        <button class="hidden md:flex p-3 px-7 bg-orange-500 text-white rounded-full shadow-md hover:bg-white hover:text-orange-500 cursor-pointer">
+          Get Started
+        </button>
       </div>
-      <p class="mt-2 text-gray-500 ml-16">
-        See how your day-to-day tasks fit into the wider vision.
-      </p>
-    </div>
 
-    <div>
-      <div class="flex items-center gap-4">
-        <span class="bg-orange-500 text-white px-5 py-1 rounded-full font-bold">02</span>
-        <h3 class="font-bold text-blue-950">Advanced built-in reports</h3>
+      <div class="max-w-6xl mx-auto flex flex-col-reverse md:flex-row md:items-center px-6 gap-12">
+        <div class="flex flex-col gap-6 text-center md:text-left md:w-1/2">
+          <p class="text-3xl md:text-4xl font-bold text-blue-950">
+            Bring everyone together to build better products
+          </p>
+          <p class="text-gray-400">
+            Manage makes it simple for software teams to plan day-to-day tasks
+            while keeping the larger team goals in view.
+          </p>
+          <button class="self-center md:self-start p-2 px-6 bg-orange-400 rounded-full text-white font-semibold shadow-md hover:bg-white hover:text-orange-500 cursor-pointer">
+            Get Started
+          </button>
+        </div>
+
+        <div class="md:w-1/2">
+          <img src="images/illustration-intro.svg" alt="" />
+        </div>
       </div>
-      <p class="mt-2 text-gray-500 ml-16">
-        Set internal delivery estimates and track progress toward company goals.
-      </p>
-    </div>
 
-    <div>
-      <div class="flex items-center gap-4">
-        <span class="bg-orange-500 text-white px-5 py-1 rounded-full font-bold">03</span>
-        <h3 class="font-bold text-blue-950">Everything in one place</h3>
+      <div class="max-w-6xl mx-auto px-6 pt-24 md:flex md:gap-20">
+        <div class="md:w-1/2 text-center md:text-left">
+          <p class="text-3xl font-bold text-blue-950">
+            What’s different about Manage?
+          </p>
+          <p class="text-gray-400 pt-4">
+            Manage provides all the functionality your tem needs, without the complexity. Our software is tailor-made for modern digital product teams.
+          </p>
+        </div>
+
+        <div class="md:w-1/2 flex flex-col gap-10 pt-12">
+          <div>
+            <div class="flex items-center gap-4 bg-orange-100 rounded-l-full">
+              <p class="bg-orange-500 text-white px-6 py-2 rounded-full font-semibold">01</p>
+              <p class="font-semibold text-blue-950">
+                Track company-wide progress
+              </p>
+            </div>
+            <p class="text-gray-400 pt-4 ml-16">
+               Manage provides all the functionality your tem needs, without the complexity. Our software is tailor-made for modern digital product teams.
+            </p>
+          </div>
+
+          <div>
+            <div class="flex items-center gap-4 bg-orange-100 rounded-l-full">
+              <p class="bg-orange-500 text-white px-6 py-2 rounded-full font-semibold">02</p>
+              <p class="font-semibold text-blue-950">
+                Advanced built-in reports
+              </p>
+            </div>
+            <p class="text-gray-400 pt-4 ml-16">
+               Manage provides all the functionality your tem needs, without the complexity. Our software is tailor-made for modern digital product teams.
+            </p>
+          </div>
+
+          <div>
+            <div class="flex items-center gap-4 bg-orange-100 rounded-l-full">
+              <p class="bg-orange-500 text-white px-6 py-2 rounded-full font-semibold">03</p>
+              <p class="font-semibold text-blue-950">
+                Everything you need in one place
+              </p>
+            </div>
+            <p class="text-gray-400 pt-4 ml-16">
+               Manage provides all the functionality your tem needs, without the complexity. Our software is tailor-made for modern digital product teams.
+            </p>
+          </div>
+        </div>
       </div>
-      <p class="mt-2 text-gray-500 ml-16">
-        Stop jumping from one service to another to communicate and collaborate.
-      </p>
-    </div>
-  </div>
-</section>
 
-<section class="max-w-screen-xl mx-auto px-6 py-16 text-center">
-  <h2 class="text-3xl font-bold text-blue-950">
-    What they’ve said
-  </h2>
+      <div class="max-w-6xl mx-auto px-6 pt-32 text-center">
+        <p class="text-blue-950 font-bold text-3xl">
+          What they’ve said
+        </p>
 
-  <div class="mt-16 grid gap-10 md:grid-cols-3">
-    
-    <div class="bg-white p-8 rounded-lg shadow">
-      <img src="images/avatar-anisha.png" alt="Anisha Li"
-           class="mx-auto w-16 rounded-full -mt-16" />
-      <h3 class="mt-4 font-bold text-blue-950">Anisha Li</h3>
-      <p class="mt-4 text-gray-500">
-        “Manage has supercharged our team’s workflow. The ability to maintain visibility
-        on larger milestones at all times keeps everyone motivated.”
-      </p>
-    </div>
+        <div class="flex flex-col gap-16 pt-20 md:flex-row md:gap-8">
+          <div class="bg-white p-6 shadow rounded-lg">
+            <img src="images/avatar-anisha.png" class="w-16 mx-auto -mt-12" />
+            <p class="font-semibold text-blue-950 pt-4">Anisha Li</p>
+            <p class="text-gray-400 pt-4">
+              “Manage has supercharged our team’s workflow.”
+            </p>
+          </div>
 
-    <div class="bg-white p-8 rounded-lg shadow">
-      <img src="images/avatar-ali.png" alt="Ali Bravo"
-           class="mx-auto w-16 rounded-full -mt-16" />
-      <h3 class="mt-4 font-bold text-blue-950">Ali Bravo</h3>
-      <p class="mt-4 text-gray-500">
-        “We have been able to cancel so many other subscriptions since using Manage.”
-      </p>
-    </div>
+          <div class="bg-white p-6 shadow rounded-lg">
+            <img src="images/avatar-ali.png" class="w-16 mx-auto -mt-12" />
+            <p class="font-semibold text-blue-950 pt-4">Ali Bravo</p>
+            <p class="text-gray-400 pt-4">
+              “We have been able to cancel so many other subscriptions.”
+            </p>
+          </div>
 
-    <div class="bg-white p-8 rounded-lg shadow">
-      <img src="images/avatar-richard.png" alt="Richard Watts"
-           class="mx-auto w-16 rounded-full -mt-16" />
-      <h3 class="mt-4 font-bold text-blue-950">Richard Watts</h3>
-      <p class="mt-4 text-gray-500">
-        “Manage allows us to provide structure and process. It keeps us organized and focused.”
-      </p>
-    </div>
+          <div class="bg-white p-6 shadow rounded-lg">
+            <img src="images/avatar-richard.png" class="w-16 mx-auto -mt-12" />
+            <p class="font-semibold text-blue-950 pt-4">Richard Watts</p>
+            <p class="text-gray-400 pt-4">
+              “Manage allows us to provide structure and process.”
+            </p>
+          </div>
+        </div>
 
-  </div>
-
-  <button class="mt-12 px-6 py-2 bg-orange-500 text-white rounded-full shadow">
-    Get Started
-  </button>
-</section>
-
-
-<section class="cta-bg bg-orange-500 text-white py-16 px-6">
-  <div class="max-w-screen-xl mx-auto md:flex md:items-center md:justify-between text-center md:text-left">
-    <h2 class="text-3xl font-bold">
-      Simplify how your team works today.
-    </h2>
-    <button class="mt-6 md:mt-0 px-6 py-2 bg-white text-orange-500 rounded-full font-bold">
-      Get Started
-    </button>
-  </div>
-</section>
-
-<footer class="bg-gray-900 text-gray-400 py-12">
-  <div class="max-w-screen-xl mx-auto px-6 md:flex md:justify-between md:items-center">
-    <img src="images/logo.svg" alt="Manage logo" class="mb-6 md:mb-0" />
-
-    <div class="flex gap-12">
-      <div>
-        <p>Home</p><p>Pricing</p><p>Products</p><p>About Us</p>
+        <button class="mt-12 p-3 px-7 bg-orange-500 text-white rounded-full shadow-md hover:bg-white hover:text-orange-500 cursor-pointer">
+          Get Started
+        </button>
       </div>
-      <div>
-        <p>Careers</p><p>Community</p><p>Privacy Policy</p>
-      </div>
-    </div>
-  </div>
-</footer>
 
-</body>
+      <div class="team-work bg-orange-500 mt-32 py-16">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between text-center md:text-left gap-6">
+          <p class="text-white font-bold text-4xl">
+            Simplify how your team works today.
+          </p>
+          <button class="bg-white text-orange-500 font-bold px-6 py-3 rounded-full">
+            Get Started
+          </button>
+        </div>
+      </div>
+
+      <div class="bg-black text-gray-400 py-16">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row md:justify-between gap-12">
+          <img src="images/logo.svg" class="w-34 h-6" />
+
+          <div class="flex gap-12">
+            <div class="flex flex-col gap-3">
+              <p>Home</p><p>Pricing</p><p>Products</p><p>About Us</p>
+            </div>
+            <div class="flex flex-col gap-3">
+              <p>Careers</p><p>Community</p><p>Privacy Policy</p>
+            </div>
+          </div>
+
+          <div class="flex gap-2">
+            <input type="text" placeholder="Updates in your inbox…" class="rounded-full px-4 bg-white -py-4" />
+            <button class="bg-orange-500 text-white hover:bg-white hover:text-orange-500 cursor-pointer px-20 rounded-full">Go</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
 </html>
